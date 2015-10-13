@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="GABook">
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
   <title>GABook</title>
@@ -10,13 +10,33 @@
   <script src="app.js"></script>
 
 </head>
-<body >
+<body ng-app="GABook">
 
   <h1> Your Favorite Instructors </h1>
   <div ng-controller="Controller">
     <!--  Traverses $scope.students in app.js controller -->
     <div ng-repeat="instructor in instructors | orderBy:orderProperty">
-      <instructor-namecard>
+      <img ng-src={{instructor.image}} width='100px'>
+
+      <h3>Name: {{instructor.name}} ({{instructor.position}} Extraordinaire)</h3>
+
+      <h3>Github Address: <a href="{{'https://www.github.com/' + instructor.github}}" target="new">{{ instructor.github}}</a></h3>
+
+      <p>Currently instructing cohort # {{instructor.cohort}}</p>
+
+      Total occurrences of {{instructor.name}} saying the word 'Automagic'
+      <button ng-click="count = count + 1" ng-init="count=0">
+        +1
+      </button>
+      <span>
+         {{count}} times!
+      </span>
+
+      <div ng-if="count >= 10">
+        <em>This instructor is a wizard!</em>
+      </div>
+
+      <hr>
     </div>
   </div>
 </body>
