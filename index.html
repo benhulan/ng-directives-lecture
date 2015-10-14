@@ -15,7 +15,7 @@
   <h1> Your Favorite Instructors </h1>
   <div ng-controller="Controller">
     <!--  Traverses $scope.students in app.js controller -->
-    <div ng-repeat="instructor in instructors | orderBy:orderProperty">
+    <div ng-repeat="instructor in instructors | orderBy: 'cohort'">
       <name-card></name-card>
     </div>
   </div>

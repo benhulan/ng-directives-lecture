@@ -99,6 +99,13 @@ app.controller('Controller', ['$scope', function($scope) {
        image: 'https://avatars2.githubusercontent.com/u/1916144?v=3&s=460',
        position: 'Developer In Residence',
        cohort: 23,
+     },
+     {
+       name: 'Erik Erwitt',
+       github: 'eerwitt',
+       image: 'https://avatars3.githubusercontent.com/u/1329385?v=3&s=460',
+       position: 'Instructor',
+       cohort: 24,
      }
    ];
 }]);
