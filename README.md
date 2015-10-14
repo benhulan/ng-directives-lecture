@@ -16,7 +16,15 @@ After you have cloned this repository, run npm install to download the necessary
 npm install
 ```
 
-We will be using a separate `templates` folder to store our partial html files.  To access these files from our index.html and app.js files, we will need to serve our website instead of accessing it statically 
+We will be using a separate `templates` folder to store our partial html files.  To access these files from our index.html and app.js files, we will need to serve our website instead of accessing it statically. 
+
+From the command line within this project:
+
+```
+http-server
+```
+
+You can then browse to one of the two addresses the server provides you to see your site.
 
 
 ##Custom Directive Structure
