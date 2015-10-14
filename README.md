@@ -24,14 +24,14 @@ We will be using a separate `templates` folder to store our partial html files. 
 This is a basic directive structure for including customized content. Note the name of the directive is `myDirective` in camelCase.  Names of directives in Angular's JS files must be **camelCase**.  Attach this to your module instantiation:
 
 ```javascript
-.directive('myDirective', function() {
+app.directive('myDirective', function() {
     return {
       restrict: 'E', // Element only
       templateUrl: 'path to my template',
       controller: function($scope){
-        console.log("Hi, I can debuge the scope!" , $scope);
+        console.log("Hi, I can debug the scope!" , $scope);
       },
-  }})
+  }});
 ```
 
 To call this directive, simply use the **snake-case** of the directive name:
