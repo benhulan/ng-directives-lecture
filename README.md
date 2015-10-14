@@ -16,7 +16,15 @@ After you have cloned this repository, run npm install to download the necessary
 npm install
 ```
 
-We will be using a separate `templates` folder to store our partial html files.  To access these files from our index.html and app.js files, we will need to serve our website instead of accessing it statically 
+We will be using a separate `templates` folder to store our partial html files.  To access these files from our index.html and app.js files, we will need to serve our website instead of accessing it statically.
+
+From the command line in your poject directory: 
+
+```
+http-server
+```
+
+Navigate to one of the two provided local addresses and you should see your site being served.
 
 
 ##Custom Directive Structure
@@ -53,3 +61,4 @@ To call this directive, simply use the **snake-case** of the directive name:
 5.  Include an image of the instructor within `instructor-namecard` using the provided image url. Hint: you can use angular here, too
 
 6.  Display the instructors starting from the lowest cohort number first.
+
