@@ -53,4 +53,3 @@ To call this directive, simply use the **snake-case** of the directive name:
 5.  Include an image of the instructor within `instructor-namecard` using the provided image url. Hint: you can use angular here, too
 
 6.  Display the instructors starting from the lowest cohort number first.
-
