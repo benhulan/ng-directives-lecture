@@ -1,0 +1,17 @@
+<img ng-src={{instructor.image}} width='100px'>
+<h3>Name: {{instructor.name}} ({{instructor.position}} Extraordinaire)</h3>
+<h3>Github Address: <a ng-href="{{'https://www.github.com/' + instructor.github}}" target="new">{{ instructor.github}}</a></h3>
+<p>Currently instructing cohort # {{instructor.cohort}}</p>
+<p>Total occurrences of {{instructor.name}} saying the word 'Automagic'
+<button ng-click="count = count + 1" ng-init="count=0">
+  +1
+</button>
+<span>
+   {{count}} times!
+</span></p>
+
+<div ng-if="count >= 10">
+  <em>This instructor is a wizard!</em>
+</div>
+
+<hr>
