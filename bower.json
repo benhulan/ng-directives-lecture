@@ -8,7 +8,7 @@
   "main": "app.js",
   "moduleType": [],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/sf-wdi-21/ng-directives-lecture",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -17,7 +17,7 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.4.7",
+    "angular": "^1.5.0",
     "bootstrap": "~3.3.5"
   }
 }
