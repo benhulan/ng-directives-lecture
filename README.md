@@ -25,6 +25,8 @@ From the command line within this project:
 http-server
 ```
 
+(If you do not have `http-server` installed, run `npm install http-server -g`)
+
 You can then browse to one of the two addresses the server provides you to see your site.
 
 
