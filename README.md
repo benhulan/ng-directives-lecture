@@ -14,6 +14,7 @@ After you have cloned this repository, run npm install to download the necessary
 
 ```javascript
 npm install
+bower install
 ```
 
 We will be using a separate `templates` folder to store our partial html files.  To access these files from our index.html and app.js files, we will need to serve our website instead of accessing it statically. 

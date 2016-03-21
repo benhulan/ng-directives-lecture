@@ -1,6 +1,6 @@
 (function(angular) {
   'use strict';
-angular.module('GABook', [])
+angular.module('gaBook', [])
   .controller('Controller', ['$scope', function($scope) {
     $scope.instructors = [
    {
