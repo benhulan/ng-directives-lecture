@@ -1,6 +1,6 @@
 (function(angular) {
   'use strict';
-angular.module('githubApp', [])
+angular.module('GABook', [])
   .controller('Controller', ['$scope', function($scope) {
     $scope.instructors = [
    {
@@ -65,8 +65,29 @@ angular.module('githubApp', [])
     image: 'https://avatars2.githubusercontent.com/u/1916144?v=3&s=460',
     position: 'Instructor',
     cohort: 27
+   },
+   {
+    name: 'Cory Fauver',
+    github: 'cofauver',
+    image: 'https://avatars3.githubusercontent.com/u/6520345?v=3&s=400',
+    position: 'Instructor',
+    cohort: 27
+   },
+   {
+    name: 'Will Cauthen',
+    github: 'willcauthen',
+    image: 'https://avatars3.githubusercontent.com/u/14363929?v=3&s=400',
+    position: 'Developer In Residence',
+    cohort: 27
+   },
+   {
+    name: 'Nick Brennan',
+    github: 'Nick-Brennan',
+    image: 'https://avatars2.githubusercontent.com/u/13402059?v=3&s=400',
+    position: 'Developer In Residence',
+    cohort: 28
    }
   ];
     $scope.orderProp = 'cohort';
-  }])
+  }]);
 })(window.angular);
