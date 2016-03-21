@@ -1,6 +1,6 @@
 (function(angular) {
   'use strict';
-angular.module('githubApp', [])
+angular.module('GABook', [])
   .controller('Controller', ['$scope', function($scope) {
     $scope.instructors = [
    {
