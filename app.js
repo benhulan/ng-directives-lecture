@@ -89,5 +89,13 @@ angular.module('GABook', [])
    }
   ];
     $scope.orderProp = 'cohort';
-  }]);
+  }])
+  .directive('nameCard', function() {
+    return {
+      restrict: 'E',
+      controller: function($scope){
+      },
+      templateUrl: "/templates/namecard.html"
+    };
+  });
 })(window.angular);
